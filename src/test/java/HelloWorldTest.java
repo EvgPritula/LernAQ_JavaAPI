@@ -2,10 +2,10 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.Test;
 
-public class GetJson_Ex5{
+public class HelloWorldTest{
 
     @Test
-    public void getJsonHomeworkTest() {
+    public void GetJson_Ex5() {
         JsonPath response = RestAssured
                 .get("https://playground.learnqa.ru/api/get_json_homework")
                 .jsonPath();
