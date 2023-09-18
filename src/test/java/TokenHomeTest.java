@@ -1,3 +1,5 @@
+slf4j-api-1.6.1.jar
+slf4j-simple-1.6.1.jar
 import io.restassured.path.json.JsonPath;
 import org.apache.commons.lang3.Validate;
 import org.junit.jupiter.api.Test;
@@ -12,7 +14,7 @@ public class TokenHomeTest { {
     @Test
     public void testTokenHome() throws InterruptedException {
 
-        //создает задачу
+     
         String jobUrl = "https://playground.learnqa.ru/ajax/api/longtime_job";
         JsonPath response = RestAssured
                 .get(jobUrl)
@@ -23,7 +25,7 @@ public class TokenHomeTest { {
         System.out.println("Token:" + token);
         System.out.println("Time to ready:" + time);
 
-        // делает один запрос с token ДО того, как задача готова, убеждается в правильности поля status
+     
         Map<String, String> params = new HashMap<>();
         params.put("token", token);
 
@@ -36,10 +38,8 @@ public class TokenHomeTest { {
         String text = response1.get("status");
         assertEquals("Job is NOT ready", text);
 
-        // ждет нужное количество секунд с помощью функции time.sleep() - для этого надо сделать import time
         Thread.sleep(time * 1000);
 
-        // делает один запрос c token ПОСЛЕ того, как задача готова, убеждается в правильности поля status и наличии поля result
         JsonPath response2 = RestAssured
                 .given()
                 .queryParams(params)
