@@ -1,3 +1,5 @@
+slf4j-api-1.6.1.jar
+slf4j-simple-1.6.1.jar
 import io.restassured.path.json.JsonPath;
 import org.apache.commons.lang3.Validate;
 import org.junit.jupiter.api.Test;
