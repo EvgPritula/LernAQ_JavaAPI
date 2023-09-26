@@ -4,7 +4,7 @@
         import static org.junit.jupiter.api.Assertions.assertEquals;
         import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Ex10 {
+public class TestShortt {
 
     @Test
     public void testshort() {
