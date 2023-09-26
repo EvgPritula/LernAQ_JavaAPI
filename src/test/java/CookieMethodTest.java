@@ -11,7 +11,7 @@ import io.restassured.RestAssured;
         import static org.junit.jupiter.api.Assertions.assertEquals;
         import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Ex11 {
+public class CookieMethod {
 
     @Test
     public void requestCookieMethod() {
