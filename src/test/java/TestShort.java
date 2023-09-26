@@ -7,7 +7,7 @@
 public class Ex10 {
 
     @Test
-    public void testshortphrase() {
+    public void testshort() {
         String phraseLong = "test1 test2 test3";
         String phraseShort = "test1";
         int actualLength = phraseLong.length();
