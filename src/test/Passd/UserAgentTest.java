@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class UserAgentTest {
+  class UserAgentTest {
 
     @ParameterizedTest
     @ValueSource(strings = {
